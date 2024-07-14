@@ -26,8 +26,9 @@ The recall value un this situation should be considered with more weight. The po
  To conclude the prediction, the .score function was used to give an accuracy of the model which returned 0.9927, further adding weight to the models accuracy.
 
 ## Summary
-Logistic regression model in this instance returns positive results for predictions with the lowest value of 0.85 for precision for a loan likely to default and 1 for predictions on whether a loan is safe. 
+Logistic regression model in this instance returns good results for predictions with the lowest value of 0.85 for precision for a loan likely to default and 1 for predictions on whether a loan is safe. 
 
 There is an imbalance between the classes which needs to be noted with majority of instances being 0 (healthy loan) with 18658 cases compared to 619. Despite this imbalance, the model performs well shown by the weighted average value of 0.99 which combines all metrics (precision, recall and F1).
 
-However, it is more important to predict the 1's where a loan is likely to default. Given the data is categorical, it is likely the best model is the linear regression. Some improvements may want to be considered here to increase this 0.85 value for the minority class. 
+However, it is more important to predict the 1's where a loan is likely to default. 
+Some improvements may want to be considered here to increase this 0.85 value for the minority class. 
